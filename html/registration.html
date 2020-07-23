@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/registration.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title> site</title>
+</head>
+<body>
+    <div class="registration__wrapper">
+        <div class="registration">
+            <h1 class="registration__title">Регистрация аккаунта</h1>
+            <input type="name" class="registration__name" placeholder="Имя">
+            <input type="surname" class="registration__surname" placeholder="Фамилия">
+            <div class="registration__radio">
+                <label for id="registration__radio-female" class="registration__radio-female">Женщина</label>
+                <input type="radio" id="registration__radio-female"
+                name="gender" value="Мужчина">
+                <label for id="registration__radio-male" class="registration__radio-male">Мужчина</label>
+                <input type="radio" id="registration__radio-male"
+                name="gender" value="Женщина">
+            </div>
+    
+            <div class="registration__birthdate">
+                <label class="registration__birthdate-title">Дата рождения
+                </label>
+                <input type="date" class="registration__birthdate-form" palceholder="дд.мм.гггг">
+            </div>
+            <div class="registration__login">
+                <label class="registration__login-title">Данные для входва в сервис</label>
+                <input type="email" class="registration__login-email" placeholder="Email">
+                <input type="password" class="registration__login-password" placeholder="Password">
+            </div>
+            <div class="registration__switch">                
+                <input type="checkbox" id="registration__switch" class="registration__switch-checkbox" /><label class="switch-pos" for="switch"></label>
+                <p class="registration__switch-name">Получать спецпредложения</p>
+        </div>
+
+        <input type="button" class="registration__button" value="Перейти к оплате">
+
+        <div class="registration__bottom">
+            <p class="registration__bottom-text">Уже есть аккаунт на TOXIN</p>
+            <input type="button" class="registration__bottom-button" value="Войти">
+        </div>
+    </div>
+    </body>
+    </html>

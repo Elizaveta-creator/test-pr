@@ -1,0 +1,470 @@
+.registration__wrapper {
+    width: 1900px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(project1/src/img/image-4.1.png);
+    background-size: cover;
+
+}
+
+.registration {
+    width: 25%;
+    height: 70%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-start;    
+    flex-wrap: wrap;
+    flex-flow: column;
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.registration__title {
+width:80%;
+margin-left: 25px;
+margin-top: 40px;
+font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 29px;
+line-height: 24px;
+color: #1F2041;
+}
+
+.registration__name {
+height:44px;
+margin-left: 25px;
+margin-top: 10px;
+width:90%;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px
+}
+
+.registration__name::placeholder {
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Dark 25% */
+
+color: rgba(31, 32, 65, 0.25);
+}
+
+.registration__surname {
+    height:44px;
+margin-left: 25px;
+margin-top: 10px;
+width:90%;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px
+
+}
+
+
+.registration__surname::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    
+    
+    /* Dark 25% */
+    
+    color: rgba(31, 32, 65, 0.25);
+    }
+    
+  
+  .registration__radio {
+
+      width:100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-flow: row-reverse;
+  }
+
+
+    .registration__radio-male {
+        
+        margin-top: 10px;
+        margin-left: 15px;
+        font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* Dark 75% */
+
+color: rgba(31, 32, 65, 0.75);
+    }
+
+   .registration__radio-female {
+    
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    
+    /* Dark 75% */
+    
+    color: rgba(31, 32, 65, 0.75);
+
+   }
+   input[type=radio] {
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        background: #FFFFFF;
+        margin-top: 12px;
+        margin-left: 25px;
+
+          border: 1px solid rgba(31, 32, 65, 0.25);
+           box-sizing: border-box;
+
+    }
+
+
+    input[type=radio]:active {
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        background: #FFFFFF;
+border: 1px solid #BC9CFF;
+box-sizing: border-box;
+border-radius: 10px;
+background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    }
+    
+   .registration__birthdate {
+       width: 100%;
+       display: flex;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+   }
+  
+
+   .registration__birthdate-title {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    
+    color: #1F2041;
+   }
+
+
+   .registration__birthdate-form {
+       width: 90%;
+       margin-top: 10px;
+       margin-left: 25px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+   }
+
+   .registration__birthdate-form::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.25);
+   }
+
+.registration__login {
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.registration__login-title {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 25px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+/* Dark 100% */
+
+color: #1F2041;
+}
+
+.registration__login-email {
+    width:90%;
+    margin-top:10px;
+    margin-left:25px;
+    height: 44px;
+    background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.registration__login-password {
+    width:90%;
+    margin-top:10px;
+    margin-left:25px;
+    height: 44px;
+    background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.registration__switch
+       {
+display:flex;
+width: 100%;
+justify-content: flex-start;
+height: 12px;
+margin-left: 35px;
+margin-top: 15px;
+
+
+background: rgba(31, 32, 65, 0.25);
+border-radius: 10px
+	
+}
+#registration__switch {
+   
+width: 12%;
+height: 12px;
+border: 1px solid gray;
+background:white;
+border-radius: 10px
+}
+
+.checkbox-switch-name {
+    position: absolute;
+width: 210px;
+height: 24px;
+left: 80px;
+top: 438px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+/* Dark 75% */
+color: rgba(31, 32, 65, 0.75);
+}
+.registration__switch-pos {
+	position: absolute;
+width: 40px;
+height: 20px;
+left: 30px;
+top: 454px;
+
+background: #FFFFFF;
+/* Dark 25% */
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 10px
+
+}
+
+.registration__switch-pos:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	width: 14px;
+	height: 14px;
+	background: rgba(31, 32, 65, 0.25);
+border-radius: 10px;;
+    transition: 0.3s;
+    
+    
+}
+
+.registration__switch-checkbox:checked + .switch-pos {
+    background: #FFFFFF;
+    
+    
+    
+}
+
+.checkbox-body:checked + .switch-pos:after {
+	left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+ 
+}
+.switch-pos:active:after {
+    width: 30px;
+   
+}
+
+.registration__button {
+    width: 90%;
+    height: 44px;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 22px;
+
+}
+
+.registration__button:focus {
+    outline: none;
+
+}
+
+
+.registration__button:active {
+    width: 90%;
+    height: 44px;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+opacity:0.5;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.registration__bottom {
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.registration__bottom-text {
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 25px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+
+.registration__bottom-button {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+/* Primary Color */
+background: white;
+color: #BC9CFF;
+border-radius: 32px;
+border-color:  #BC9CFF;
+}
+
+.registration__bottom-button:focus {
+    outline: none;
+}
+
+.registration__bottom-button:active {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+opacity: 0.5;
+/* Primary Color */
+background: white;
+color: #BC9CFF;
+border-radius: 32px;
+border-color:  #BC9CFF;
+}

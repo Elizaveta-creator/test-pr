@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="sidebar_guests.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="header-wrapper">
+        <div class="header container">
+            <div class="header_logo">
+                <img class="header_logo-img" src="toxin_logo.jpg">
+            </div>
+            <div class="header_nav">
+                <a class="header_ha1">О нас</a>
+                <select name="Услуги" class="header_ha2">
+                    <option value="Услуги">Услуги</option>
+                </select>
+                <a class="header_ha3">Вакансии</a>
+                <a class="header_ha4">Новости</a>
+                <select name="Соглашения" class="header_ha5">
+                    <option value="Соглашения">Соглашения</option>
+                </select>
+            </div>
+            <div class="header_btn">
+                <input type="button" name="login" value="LOGIN" class="header_btn_login">
+                <input type="button" name="register" value="REGISTER" class="header_btn_register">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="content container">
+        <!--Общий родитель-->
+        <div class="content_sidebar">
+            <div class="content_sidebar_calendar">
+            </div>
+
+            <div class="content_sidebar_gst">
+                <label for="content_sidebar_gst" id="content_sidebar_gst">Гости</label>
+
+                <button onclick="myGst()" class="content_sidebar_gst-onclick"
+                    id="content_sidebar_gst-dropbuttontext">Количество гостей</button>
+                <div class="content_sidebar_gst-cont" id="content_sidebar_gst-content">
+                    <div class="content_sidebar_gst-adults">Взрослые
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease"
+                            onclick="MinusButtonGst()" value="Decrease Value">-</button>
+                        <input type="text" id="content_sidebar_gst-button" value="0" />
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase"
+                            onclick="PlusButtonGst()" value="Increase Value">+</button>
+                    </div>
+                    <div class="content_sidebar_gst-children">Дети
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease1"
+                            onclick="MinusButtonGst1()" value="Decrease Value">-</button>
+                        <input type="text" id="content_sidebar_gst-button1" value="0" />
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase1"
+                            onclick="PlusButtonGst1()" value="Increase Value">+</button>
+                    </div>
+
+                    <div class="content_sidebar_gst-kids">Младенцы
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease2"
+                            onclick="MinusButtonGst2()" value="Decrease Value">-</button>
+                        <input type="text" id="content_sidebar_gst-button2" value="0" />
+                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase2"
+                            onclick="PlusButtonGst2()" value="Increase Value">+</button>
+                    </div>
+
+
+                    <input type="submit" class="content_sidebar_gst-cancel" value="Очистить">
+
+                    <input type="submit" class="content_sidebar_gst-submit" value="Применить">
+
+                </div>
+                лд?
+
+            </div>
+
+
+            <div class="content_sidebar_diapazon"></div>
+            <div class="content_sidebar_checks"></div>
+            <div class="content_sidebar_ability"></div>
+            <div class="content_sidebar_comfort"></div>
+            <div class="content_sidebar_additional"></div>
+        </div>
+
+        <div class="content_main">
+            <h1 class="content_main_title">Номера, которые мы для вас подобрали</h1>
+            <div class="content_list">
+
+                <div class="content_item">
+                    <div class="content_item_slider">
+                        <img src="img/first-image.png" alt="комната 888">
+                    </div>
+                    <div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+                </div>
+
+                <div class="content_item">
+                    <div class="content_item_slider">
+                        <img src="img/second-image.png" alt="комната 888">
+                    </div>
+                    <div class="content_item_num">№ 888</div>
+                    <span class="content_item_luxe">Люкс</span>
+                    <div class="content_item_price">
+                        <b>9 900Р</b> в сутки</div>
+                    <div class="content_item_stars">
+                    </div>
+                    <div class="content_item_reviews"></div>
+                </div>
+
+                <div class="content_item">
+                    <div class="content_item_slider">
+                        <img src="img/third-image.png" alt="комната 888">
+                    </div>
+                    <div class="content_item_num">№ 888</div>
+                    <span class="content_item_luxe">Люкс</span>
+                    <div class="content_item_price">
+                        <b>9 900Р</b> в сутки</div>
+                    <div class="content_item_stars">
+                    </div>
+                    <div class="content_item_reviews"></div>
+                </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/fourth-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/fifth-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/sixth-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/seventh-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/eight-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/nine-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/tenth-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/eleventh-image.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+
+                    <div class="content_item">
+                        <div class="content_item_slider">
+                            <img src="img/tenth-image-2.png" alt="комната 888">
+                        </div>
+                        <div class="content_item_num">№ 888</div>
+                        <span class="content_item_luxe">Люкс</span>
+                        <div class="content_item_price">
+                            <b>9 900Р</b> в сутки</div>
+                        <div class="content_item_stars">     
+                        </div>
+                        <div class="content_item_reviews"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="content_pagination"></div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.content-wrapper {
+max-width: 1420px;
+background-color: blue;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    
+
+    
+
+}
+
+.content_img {
+    width: 100%;
+    height: auto;
+}
+.content_text {
+    padding-bottom: 320px;
+    justify-content: flex-end;
+}
