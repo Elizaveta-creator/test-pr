@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
     <script src="sidebar_guests.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Document</title>
@@ -46,13 +49,33 @@
         <!--Общий родитель-->
         <div class="content_sidebar">
             <div class="content_sidebar_calendar">
+                <label for id="content_sidebar_calendar-form" class="content_sidebar_calendar-title">даты пребывания в отеле</label>
+             <input type="date" id="content_sidebar_calendar-form" placeholder="дд.мм.гггг">
             </div>
 
             <div class="content_sidebar_gst">
-                <label for="content_sidebar_gst" id="content_sidebar_gst">Гости</label>
+                <label for="content_sidebar_gst-onclick" id="content_sidebar_gst">Гости</label>
+                
+                <input type="text" onclick="myGst()" id="content_sidebar_gst-onclick" placeholder="Количество гостей">
 
-                <button onclick="myGst()" class="content_sidebar_gst-onclick"
-                    id="content_sidebar_gst-dropbuttontext">Количество гостей</button>
+
+  
+                                     
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                   <!--
                 <div class="content_sidebar_gst-cont" id="content_sidebar_gst-content">
                     <div class="content_sidebar_gst-adults">Взрослые
                         <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease"
@@ -82,13 +105,42 @@
 
                     <input type="submit" class="content_sidebar_gst-submit" value="Применить">
 
-                </div>
-                лд?
+                </div> -->
+                
 
             </div>
 
 
-            <div class="content_sidebar_diapazon"></div>
+            <div class="content_sidebar_slider-range">
+                
+                   <div class="slider-range-main">
+                      <label class="slider-name" for="amount">ДИАПАЗОН ЦЕНЫ</label>
+                      <input class="slider-body" type="text" id="amount">
+                    </div>
+                    
+                      <div id="slider-range" > 
+                    <script>
+                      $( function() {
+                        $( "#slider-range" ).slider({
+                          range: true,
+                          min: 0,
+                          max: 15000,
+                          values: [ 5000, 10000 ],
+                          slide: function( event, ui ) {
+                            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                          }
+                        });
+                        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                          " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+                      } );
+                      </script>
+                    </div>
+                     
+                    
+                     
+                    
+                   
+            </div>
             <div class="content_sidebar_checks"></div>
             <div class="content_sidebar_ability"></div>
             <div class="content_sidebar_comfort"></div>
@@ -101,7 +153,7 @@
 
                 <div class="content_item">
                     <div class="content_item_slider">
-                        <img src="/img/first-image.png" alt="комната 888">
+                        <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\first-image.png" alt="комната 888">
                     </div>
                     <div>
                         <div class="content__item-add">
@@ -117,7 +169,7 @@
 
                 <div class="content_item">
                     <div class="content_item_slider">
-                        <img src="/img/second-image.png" alt="комната 888">
+                        <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\second-image.png" alt="комната 888">
                     </div>
                     <div class="content__item-add">
                         <div class="content_item_num">№ 888</div>
@@ -131,7 +183,7 @@
 
                 <div class="content_item">
                     <div class="content_item_slider">
-                        <img src="/img/third-image.png" alt="комната 888">
+                        <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\third-image.png" alt="комната 888">
                     </div>
                     <div class="content__item-add">
                         <div class="content_item_num">№ 888</div>
@@ -145,7 +197,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/fourth-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\fourth-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -159,7 +211,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/fifth-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\fifth-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -173,7 +225,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/sixth-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\sixth-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -187,7 +239,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/seventh-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\seventh-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -201,7 +253,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/eight-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\eight-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -215,7 +267,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/nine-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\nine-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -229,7 +281,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/tenth-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\tenth-image-2.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -243,7 +295,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/eleventh-image.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\eleventh-image.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                             <div class="content_item_num">№ 888</div>
@@ -257,7 +309,7 @@
 
                     <div class="content_item">
                         <div class="content_item_slider">
-                            <img src="/img/tenth-image-2.png" alt="комната 888">
+                            <img src="C:\Users\User\Downloads\test-pr-master\test-pr-master\img\tenth-image-2.png" alt="комната 888">
                         </div>
                         <div class="content__item-add">
                         <div class="content_item_num">№ 888</div>
