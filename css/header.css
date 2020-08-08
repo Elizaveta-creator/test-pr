@@ -1,0 +1,153 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+.header__wrapper {
+    max-width: 1900px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.header__logo {
+    display: flex-start;
+    border: 1px solid black;
+    width: 10%;
+
+}
+
+.header__nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+} 
+.header__nav-ha1 {
+    width: 15%;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    border: none;
+    color: rgba(31, 32, 65, 0.75);
+
+}
+.header__nav-ha {
+    width: 15%;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    border: none;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.header__nav-ha:focus {
+    outline:none;
+}
+
+.header__button {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.header__button-login {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color:#BC9CFF;
+border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 1 1 1 1;
+border-radius: 22px;;
+width: 20%;
+margin: 5px;
+background: white;
+border-radius: 22px;}
+
+.header__button-login::after {
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+    
+
+.header__button-login:focus {
+    outline: none;
+}
+
+.header__button-login:active {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color:#BC9CFF;
+    opacity: 0.5;
+    border-radius: 22px;
+    
+}
+
+
+
+.header__button-register {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border:none;
+    width: 40%;
+    margin: 5px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+        
+    }
+    .header__button-register:focus {
+        outline: none;
+    }
+    
+    .header__button-register:active {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.5;
+        border-radius: 22px;
+        
+        
+            
+        }
+    

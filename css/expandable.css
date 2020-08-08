@@ -1,0 +1,147 @@
+.content_sidebar_additional {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 90%;
+    
+
+
+	
+	}
+.content_sidebar_additional-text {
+    width:70%;
+    display: flex;
+    margin: 10px;
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+/* Dark 100% */
+
+color: #1F2041;
+	}
+h1 span {
+	
+	cursor: pointer;
+	}
+
+	
+ul {
+
+display:flex;
+width:100%;
+justify-content: space-between;
+flex-flow: column;
+margin-left:0px;
+padding-left: 0px;
+
+	}
+
+   
+
+
+    span {
+        display: inline-flex;
+        margin-left: 20px;
+        margin-top: -5px;
+        font-family: Material Icons;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Dark 50% */
+
+color: rgba(31, 32, 65, 0.5);
+
+    }
+
+
+  
+
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+
+
+
+  .content_sidebar_expand-title:before {
+    display:  block;
+    content: " ";
+    background: #FFFFFF;
+    /* Dark 25% */
+    height:20px;
+    width:20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+
+  input:checked +.content_sidebar_expand-title   {
+    background: linear-gradient(red, blue); /* Градиент для текста */
+   }
+
+
+    input:checked + .content_sidebar_expand-title:before {
+    content: "✔";
+    color:  #BC9CFF;
+    mix-blend-mode: screen;
+    
+    background: #FFFFFF;
+
+    padding-left:3px;
+    height:20px;
+    width:20px;
+    border: 1px solid #BC9CFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+
+
+  input:disabled + .content_sidebar_expand-title:before {
+    background: #FFFFFF;
+    /* Dark 25% */
+    height:20px;
+    width:20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+
+  .content_sidebar_expand-title {
+      width: 50%;
+    display:flex;
+   justify-content: flex-start;
+   
+   
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    margin: 10px;
+    /* Dark 75% */
+    color: rgba(31, 32, 65, 0.75);
+    
+      
+
+      
+  }
+
+  
+  

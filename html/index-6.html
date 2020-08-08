@@ -4,11 +4,15 @@
 <head>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="sidebar_guests.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/index-6.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="sidebar_guests.js"></script>
+    <script src="/js/expandable.js"></script>
+    <link rel="stylesheet" href="/css/expandable.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Document</title>
@@ -50,7 +54,8 @@
         <div class="content_sidebar">
             <div class="content_sidebar_calendar">
                 <label for id="content_sidebar_calendar-form" class="content_sidebar_calendar-title">даты пребывания в отеле</label>
-             <input type="date" id="content_sidebar_calendar-form" placeholder="дд.мм.гггг">
+             
+                <input type="date" id="content_sidebar_calendar-form" placeholder="дд.мм.гггг">
             </div>
 
             <div class="content_sidebar_gst">
@@ -91,7 +96,6 @@
                         <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase1"
                             onclick="PlusButtonGst1()" value="Increase Value">+</button>
                     </div>
-
                     <div class="content_sidebar_gst-kids">Младенцы
                         <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease2"
                             onclick="MinusButtonGst2()" value="Decrease Value">-</button>
@@ -99,12 +103,8 @@
                         <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase2"
                             onclick="PlusButtonGst2()" value="Increase Value">+</button>
                     </div>
-
-
                     <input type="submit" class="content_sidebar_gst-cancel" value="Очистить">
-
                     <input type="submit" class="content_sidebar_gst-submit" value="Применить">
-
                 </div> -->
                 
 
@@ -141,10 +141,84 @@
                     
                    
             </div>
-            <div class="content_sidebar_checks"></div>
-            <div class="content_sidebar_ability"></div>
-            <div class="content_sidebar_comfort"></div>
-            <div class="content_sidebar_additional"></div>
+            <div class="content_sidebar_checks">
+                
+                    <h1 class="content_sidebar_checks-name">Checkbox buttons</h1>
+                    <input type="checkbox" name="smoke" id="content_sidebar_checks-smoke" value="smoke">
+                    <label for="content_sidebar_checks-smoke" class="content_sidebar_checks-text">Можно курить</label>
+                    
+
+                    <input type="checkbox" name="pet" id="content_sidebar_checks-pet" value="pet">
+                    <label for="content_sidebar_checks-pet" class="content_sidebar_checks-text">Можно с животными</label> 
+                    
+
+                    <input type="checkbox" name="guests" id="content_sidebar_checks-guests" value="guests">
+                    <label for="content_sidebar_checks-guests" class="content_sidebar_checks-text">Можно пригласить гостей (до 10 человек)</label> 
+                    
+                </div>
+        
+            
+            
+            <div class="content_sidebar_ability">
+                <h1 class="content_sidebar-ability-name">Доступность</h1>
+
+                    <input type="checkbox" id="content_sidebar_ability-wide-hall" name="wide hall" value="wide hall">
+                    <label for="content_sidebar_ability-wide-hall" class="content_sidebar_ability-text" >Широкий коридор</label>
+                   <pre class="content_sidebar_ability-add">Ширина коридора не менее 91 см</pre>
+
+                    <input type="checkbox" name="invalids" id="content_sidebar_ability-invalids" value="invalids">
+                    <label for="content_sidebar_ability-invalids" class="content_sidebar_ability-text">Помощник для инвалидов</label>
+                    <pre class="content_sidebar_ability-add">На 1 этаже вас встретит специалист 
+        и проводит до номера</pre>
+            </div>
+
+
+
+            <div class="content_sidebar_comfort">
+                <label for="content_sidebar_comfort_field" class="content_sidebar_comfort_title">Удобства номера</label>
+                <input type="text" id="content_sidebar_comfort_field">
+            </div>
+
+            <div class="content_sidebar_additional">
+                <h1 class="content_sidebar_additional-text">дополнительные удобства
+                <span class="content_sidebar-expand">∨</span></h1>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="breakfast" value="breakfast" id="content_sidebar_expand-breakfast">
+                        <label for="content_sidebar_expand-breakfast" class="content_sidebar_expand-title">Завтрак</label>
+                    </li>
+            
+                    <li>
+                        <input type="checkbox" name="table" value="table" id="content_sidebar_expand-table">
+                        <label for="content_sidebar_expand-table" class="content_sidebar_expand-title">Письменный стол</label>
+                       </li>
+            
+                    <li>
+                    <input type="checkbox" name="chair" value="chair" id="content_sidebar_expand-chair">
+                    <label for="content_sidebar_expand-chair" class="content_sidebar_expand-title">Стул для кормления</label></li>
+                   
+                   
+                   
+                    <li>
+                        
+                        <input type="checkbox" name="bed" value="bed" id="content_sidebar_expand-bed">
+                        <label for="content_sidebar_expand-bed" class="content_sidebar_expand-title">Кроватка</label>
+                    </li>
+                        
+            
+            
+                    <li>
+                        <input type="checkbox" name="tv" value="tv" id="content_sidebar_expand-tv">
+                        <label for="content_sidebar_expand-tv" class="content_sidebar_expand-title">Телевизор</label></li>
+                       
+                    <li>
+                        <input type="checkbox" name="shampoo" value="shampoo" id="content_sidebar_expand-shampoo">
+                        <label for="content_sidebar_expand-shampoo" class="content_sidebar_expand-title">Шампунь</label>
+                    </li>
+                        
+                        
+                </ul>
+            </div>
         </div>
 
         <div class="content_main">
