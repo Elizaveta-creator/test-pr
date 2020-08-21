@@ -1,0 +1,463 @@
+
+  .numbers {
+    position: absolute;
+width: 320px;
+height: 60px;
+left: 30px;
+top: 30px;
+text-align: left;
+font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+
+/* Dark 100% */
+color: #1F2041;
+  }
+ 
+ 
+.dropbtn {
+    
+   position: absolute;
+width: 266px;
+height: 44px;
+left: 140px;
+top: 204px;
+
+background: #FFFFFF;
+/* Dark 25% */
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+    }
+
+    .gst {
+        position: absolute;
+        width: 43px;
+        height: 15px;
+        left: 170px;
+        top: 345px;
+        
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-transform: uppercase;
+        
+        /* Dark 100% */
+        color: #1F2041;
+    }
+    
+    #dropbuttontext {
+        position: absolute;
+        width: 320px;
+        height: 44px;
+        left: 170px;
+        top: 365px;
+        
+        background: #FFFFFF;
+        /* Dark 25% */
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+/* Dark 75% */
+color: rgba(31, 32, 65, 0.75);
+text-align: left;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+    width: 320px;
+    height: 159px;
+    left: 170px;
+    top: 409px;
+    background: #FFFFFF;
+    /* Dark 50% */
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    }
+    
+     #show-calendar-date-external  {
+  
+position: absolute;
+width: 320px;
+height: 44px;
+left: 170px;
+top: 440px;
+
+/* Primary Gradient */
+background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 22px;
+ }
+
+
+ .external-button {
+  
+position: absolute;
+width: 280px;
+height: 15px;
+left: 188px;
+top: 454px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+ }
+    .show {display:block;}
+    
+    
+    
+    #decrease {
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 201px;
+    top: -7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    }
+    
+    #increase {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 263px;
+    top: -7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    }
+    
+    #button {
+        position: absolute;
+    width: 25px;
+    height: 15px;
+    left: 234px;
+    top: 0px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    /* Dark 100% */
+    color: #1F2041;
+    
+    
+    }
+    
+    
+    #decrease1 {
+        position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 201px;
+    top: -7px;
+    
+    
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    
+    
+    
+    
+    
+    color: rgba(31, 32, 65, 0.5);
+    }
+    
+    #increase1 {
+        position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 263px;
+    top: -7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    }
+    
+    #button1 {
+        position: absolute;
+    width: 25px;
+    height: 15px;
+    left: 234px;
+    top: 0px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    color: #1F2041;
+    }
+    
+    
+    #decrease2 {
+        position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 201px;
+    top: -7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    }
+    
+    #increase2 {
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 263px;
+    top: -7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    }
+    
+    #button2 {
+        position: absolute;
+    width: 25px;
+    height: 15px;
+    left: 234px;
+    top: 0px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    color: #1F2041;
+    }
+    
+    
+    .adults {
+        position: absolute;
+    width: 83px;
+    height: 15px;
+    left: 15px;
+    top: 13px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    color: #1F2041;
+    }
+    .children {
+        position: absolute;
+    width: 83px;
+    height: 15px;
+    left: 15px;
+    top: 50px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    color: #1F2041;
+    }
+    
+    
+    .kids {
+    position: absolute;
+    width: 83px;
+    height: 15px;
+    left: 15px;
+    top: 87px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    
+    /* Dark 100% */
+    color: #1F2041;
+    }
+    
+    .cancel {
+        
+        position: absolute;
+        width: 92px;
+        height: 15px;
+        left: 14px;
+        top: 131px;
+        border: none;
+        background-color: #FFFFFF;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-transform: uppercase;
+        
+        color: rgba(31, 32, 65, 0.5);
+    }
+    
+    .submit {
+        position: absolute;
+    width: 104px;
+    height: 15px;
+    left: 209px;
+    top: 131px;
+    border: none;
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    
+    /* Primary Color */
+    color: #BC9CFF;
+    }
+
+    #show-calendar-date-external  {
+  
+        position: absolute;
+        width: 320px;
+        height: 44px;
+        left: 170px;
+        top: 440px;
+        
+        /* Primary Gradient */
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+         }
+        
+        
+         .external-button {
+          
+        position: absolute;
+        width: 280px;
+        height: 15px;
+        left: 188px;
+        top: 454px;
+        
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+         }

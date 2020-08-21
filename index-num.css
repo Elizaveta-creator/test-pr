@@ -1,0 +1,287 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+/* ДЛЯ КОМПЬЮТЕРОВ*/
+
+
+@media all and  (max-width: 2900px) {
+.content__wrapper {
+    max-width: 2900px;
+    width:100%;
+}
+
+.content {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+
+}
+
+.content__img {
+    display: flex;
+    width:100%;
+    height: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content__img-big {
+    width:70%;
+    height: 100%;
+    
+}
+
+.content__img-small {
+    display:flex;
+    flex-flow: column;
+    width:30%;
+    height: 100%;
+  
+   
+}
+ 
+.content__info {
+    width:70%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    flex-flow:row;
+    margin-top: 70px;
+    
+}
+
+.content__info__data {
+    display:flex;
+    width: 70%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+
+.content__info-data-title,
+.content__info-impressions-title {
+    font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 24px;
+z-index: 1;
+/* identical to box height */
+
+
+/* Dark 100% */
+
+color: #1F2041;
+margin-top: 70px;
+
+margin-bottom: 23px;
+}
+
+
+.content__info-data-title {
+    margin-left: 140px;
+
+}
+
+.content__info__data__comf, 
+.content__info__data__con, 
+.content__info__data__cos{
+    display:flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   
+}
+
+
+.content__info__data__comf-underline, 
+.content__info__data__con-underline, 
+.content__info__data__cos-underline{
+    width:30%;
+    margin-left: 140px;
+    border-color: 1px solid lightgray;
+}
+
+
+p {
+   width:35%; 
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+margin-left: 140px;
+padding-left: 68px;
+padding-bottom: 20px;
+margin-top: -10px;
+/* or 171% */
+
+
+/* Dark 75% */
+
+color: rgba(31, 32, 65, 0.75);
+border-bottom: 1px solid lightgray;
+}
+
+
+h1{
+    width:50%; 
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+margin-top: 20px;
+margin-left: 10px;
+
+/* Dark 75% */
+
+color: rgba(31, 32, 65, 0.75);
+}
+
+
+.content__info__data-img {
+    width: 48px;
+    height: 48px;;
+margin: 10px;
+margin-left: 140px;
+}
+
+
+.content__info-impressions {
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -100px;
+}
+
+
+canvas {
+    width:100%;
+    z-index: 2;
+    margin-top: -20px;
+    padding-left: -110px;
+    
+    
+}
+
+
+ul {
+    width: 20%;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ДЛЯ ПЛАНШЕТОВ*/
+
+@media all (min-width: 741px) and  (max-width: 900px) {
+    .content__wrapper {
+        max-width: 900px;
+        width: 100%;
+    }
+    .content {
+        display:flex;
+        width:100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 100px;
+    
+    }
+    
+    .content__img {
+        display: flex;
+        width:100%;
+        height: auto;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .content__img-big {
+        width:70%;
+        height: 100%;
+        flex-grow:3;
+        flex-shrink: 1;
+    }
+    
+    .content__img-small {
+        display:flex;
+        flex-flow: column;
+        width:30%;
+        height: 100%;
+        flex-grow:1;
+        flex-shrink: 1;
+        
+    }
+    
+
+}
+/* ДЛЯ ТЕЛЕФОНОВ*/
+
+@media all and (max-width: 700px) {
+    .content__wrapper {
+        max-width: 900px;
+        width:100%;
+    }
+
+    .content {
+        display:flex;
+        width:100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+    .content__img {
+        display: flex;
+        width:100%;
+        height: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .content__img-big {
+        width:100%;
+        height: 100%;
+        flex-basis: 300px;
+       
+    }
+    
+    .content__img-small {
+
+        width:100%;
+        height: 100%;
+        flex-basis: 300px;
+        
+       
+
+}

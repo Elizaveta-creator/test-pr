@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выпадающая форма</title>
+    <link rel="stylesheet" href="dropdownform1.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dropdown-container">
+        <div class="selected-items">Выбрать конфигурацию номера...</div>
+        <div class="items hidden">
+            <div class="item">
+                <span class="title">Спальни</span>
+                <span class="btn minus">-</span>
+                <input type="text" name="rooms" value="0">
+                <span class="btn plus">+</span>
+            </div>
+            <div class="item">
+                <span class="title">Кровати</span>
+                <span class="btn minus">-</span>
+                <input type="text" name="beds"  value="0">
+                <span class="btn plus">+</span>
+            </div>
+            <div class="item">
+                <span class="title">Ванные комнаты</span>
+                <span class="btn minus">-</span>
+                <input type="text" name="bathroom"  value="0">
+                <span class="btn plus">+</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            //Кнопка минус
+            $('.btn.minus').click(function () {
+                let input = $(this).parent().find('input');
+                let newValue = input.val() - 1;
+
+                if(newValue >= 0) {
+                    input.val(newValue).change();
+                }
+            });
+
+            //Кнопка плюс
+            $('.btn.plus').click(function () {
+                let input = $(this).parent().find('input');
+                let newValue = parseInt(input.val()) + 1;
+
+                if(newValue < 10) {
+                    input.val(newValue).change();
+                }
+            });
+
+            //Отслеживаем изменение
+            $('.item input').change(function () {
+                var selectedtext = '';
+                var selectTextAdd = false;
+                $('.item input').each(function () {
+                    if($(this).val() > 0) {
+                        text = $(this).parent().find('.title').text();
+                        selectedtext += text + ' ' + $(this).val() + ' ';
+                    }
+
+                    if(selectedtext!=''){
+
+                        if(!selectTextAdd) {
+                            selectedtext = 'Выбрано: ' + selectedtext;
+                            selectTextAdd = true;
+                        }
+
+                        $('.selected-items').text(selectedtext);
+                    }
+                });
+            });
+
+            $('.selected-items').click(function () {
+                $('.items').toggleClass('hidden');
+            });
+
+        });
+    </script>
+</body>
+</html>

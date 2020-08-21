@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="guests-number-form-new.css">
+<script src="onclick-guest-number-new.js"></script>
+<script src="guests-number-form-new.js"></script>
+<meta charset="UTF-8">
+<title> site</title>
+</head>
+<body>
+
+<div class="dropdown">
+  
+  <button onclick="myFunction()" class="dropbtn" id="dropbuttontext">Количество гостей</button>
+  <div id="myDropdown" class="dropdown-content">
+    <div class="adults">Взрослые
+      <button class="value-button" id="decrease" onclick="MinusButton()" value="Decrease Value">-</button>
+      <input type="text" id="button" value="0"/>
+       <button class="value-button" id="increase" onclick="PlusButton()" value="Increase Value">+</button>
+    </div>
+    <div class="children">Дети
+      <button class="value-button" id="decrease1" onclick="MinusButton1()" value="Decrease Value">-</button>
+      <input type="text" id="button1" value="0"/>
+       <button class="value-button" id="increase1" onclick="PlusButton1()" value="Increase Value">+</button>
+    </div>
+
+    <div class="kids">Младенцы
+      <button class="value-button" id="decrease2" onclick="MinusButton2()" value="Decrease Value">-</button>
+      <input type="text" id="button2" value="0"/>
+       <button class="value-button" id="increase2" onclick="PlusButton2()" value="Increase Value">+</button>
+       <div class="container" >
+    
+        <button class="cancel"> Очистить</button>
+        
+        <button class= "submit">Применить</button>
+      </div>
+    
+        <script>
+          $(".cancel").submit(function (e) {
+      e.preventDefault();
+      $('.cancel').append('<p>Success</p>');
+    });
+    
+    $('.submit').click(function (e) {
+      e.preventDefault();
+      $('.submit').append('<p>Cancelled</p>');
+    })
+        </script>
+      </div>
+  </div>
+</div>
+</body>
+</html>

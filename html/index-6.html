@@ -4,12 +4,27 @@
 <head>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/css/index-6.css">
+    
+    <link rel="stylesheet" href="/css/header.css">
+    
+    <link href="/html/dist/css/datepicker.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="/css/dropdownform1.css">
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -17,12 +32,17 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
  <link rel="stylesheet" href="/css/simplePagination.css">
-<script src="sidebar_guests.js"></script>
-    <script src="/js/expandable.js"></script>
+
+  
+    <script type="text/javascript" src="/js/expandable.js"></script>
+    
     <link rel="stylesheet" href="/css/expandable.css">  
+    
    
     <script type="text/javascript" src="/js/jquery.simplePagination.js"></script>
+    
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -34,23 +54,23 @@
 
     <div class="header-wrapper">
         <div class="header container">
-            <div class="header_logo">
-                <img class="header_logo-img" src="/img/TOXIN.png">
+            <div class="header__logo">
+                <img class="header__logo-img" src="/img/Logo.png">
             </div>
-            <div class="header_nav">
-                <a class="header_ha1">О нас</a>
-                <select name="Услуги" class="header_ha2">
+            <div class="header__nav">
+                <a class="header__nav-ha1">О нас</a>
+                <select name="Услуги" class="header__nav-ha">
                     <option value="Услуги">Услуги</option>
                 </select>
-                <a class="header_ha3">Вакансии</a>
-                <a class="header_ha4">Новости</a>
-                <select name="Соглашения" class="header_ha5">
+                <a class="header__nav-ha">Вакансии</a>
+                <a class="header__nav-ha">Новости</a>
+                <select name="Соглашения" class="header__nav-ha">
                     <option value="Соглашения">Соглашения</option>
                 </select>
             </div>
-            <div class="header_btn">
-                <input type="button" name="login" value="LOGIN" class="header_btn_login">
-                <input type="button" name="register" value="REGISTER" class="header_btn_register">
+            <div class="header__btn">
+                <input type="button" name="login" value="LOGIN" class="header__btn-login">
+                <input type="button" name="register" value="REGISTER" class="header__btn-register">
             </div>
 
         </div>
@@ -63,64 +83,89 @@
     <div class="content container">
         <!--Общий родитель-->
         <div class="content_sidebar">
-            <div class="content_sidebar_calendar">
-                <label for id="content_sidebar_calendar-form" class="content_sidebar_calendar-title">даты пребывания в отеле</label>
+            <div class="content_sidebar-datepicker-here">
+                <label for id="datepicker-here" class="content_sidebar_calendar-title">даты пребывания в отеле</label>
              
-                <input type="date" id="content_sidebar_calendar-form" placeholder="дд.мм.гггг">
+                <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-here"/>
+                
             </div>
 
-            <div class="content_sidebar_gst">
-                <label for="content_sidebar_gst-onclick" id="content_sidebar_gst">Гости</label>
-                
-                <input type="text" onclick="myGst()" id="content_sidebar_gst-onclick" placeholder="Количество гостей">
 
 
-  
-                                     
-                          
-
-
-
-
-
-
-
-
-
-
-
-
-                
-                   <!--
-                <div class="content_sidebar_gst-cont" id="content_sidebar_gst-content">
-                    <div class="content_sidebar_gst-adults">Взрослые
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease"
-                            onclick="MinusButtonGst()" value="Decrease Value">-</button>
-                        <input type="text" id="content_sidebar_gst-button" value="0" />
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase"
-                            onclick="PlusButtonGst()" value="Increase Value">+</button>
-                    </div>
-                    <div class="content_sidebar_gst-children">Дети
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease1"
-                            onclick="MinusButtonGst1()" value="Decrease Value">-</button>
-                        <input type="text" id="content_sidebar_gst-button1" value="0" />
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase1"
-                            onclick="PlusButtonGst1()" value="Increase Value">+</button>
-                    </div>
-                    <div class="content_sidebar_gst-kids">Младенцы
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-decrease2"
-                            onclick="MinusButtonGst2()" value="Decrease Value">-</button>
-                        <input type="text" id="content_sidebar_gst-button2" value="0" />
-                        <button class="content_sidebar_gst-btn" id="content_sidebar_gst-increase2"
-                            onclick="PlusButtonGst2()" value="Increase Value">+</button>
-                    </div>
-                    <input type="submit" class="content_sidebar_gst-cancel" value="Очистить">
-                    <input type="submit" class="content_sidebar_gst-submit" value="Применить">
-                </div> -->
-                
-
-            </div>
-
+            <div class="content_sidebar_dropdown-gst">
+              <div class="selected-items1">Сколько гостей</div>
+              <div class="items1 hidden1">
+                  <div class="item1">
+                      <span class="title1">Взрослые</span>
+                      <span class="btn1 minus1">-</span>
+                      <input type="text" name="rooms" value="0">
+                      <span class="btn1 plus1">+</span>
+                  </div>
+                  <div class="item1">
+                      <span class="title1">Дети</span>
+                      <span class="btn1 minus1">-</span>
+                      <input type="text" name="beds"  value="0">
+                      <span class="btn1 plus1">+</span>
+                  </div>
+                  <div class="item1">
+                      <span class="title1">Младенцы</span>
+                      <span class="btn1 minus1">-</span>
+                      <input type="text" name="bathroom"  value="0">
+                      <span class="btn1 plus1">+</span>
+                  </div>
+              </div>
+          </div>
+      
+          <script>
+              $(document).ready(function () {
+      
+                  //Кнопка минус
+                  $('.btn1.minus1').click(function () {
+                      let input = $(this).parent().find('input');
+                      let newValue = input.val() - 1;
+      
+                      if(newValue >= 0) {
+                          input.val(newValue).change();
+                      }
+                  });
+      
+                  //Кнопка плюс
+                  $('.btn1.plus1').click(function () {
+                      let input = $(this).parent().find('input');
+                      let newValue = parseInt(input.val()) + 1;
+      
+                      if(newValue < 10) {
+                          input.val(newValue).change();
+                      }
+                  });
+      
+                  //Отслеживаем изменение
+                  $('.item1 input').change(function () {
+                      var selectedtext = '';
+                      var selectTextAdd = false;
+                      $('.item1 input').each(function () {
+                          if($(this).val() > 0) {
+                              text = $(this).parent().find('.title1').text();
+                              selectedtext += text + ' ' + $(this).val() + ',';
+                          }
+      
+                          if(selectedtext!=''){
+      
+                              if(!selectTextAdd) {
+                                  selectedtext =  selectedtext;
+                                  selectTextAdd = true;
+                              }
+      
+                              $('.selected-items1').text(selectedtext);
+                          }
+                      });
+                  });
+      
+                  $('.selected-items1').click(function () {
+                      $('.items1').toggleClass('hidden1');
+                  });
+      
+                }); </script>
 
             <div class="content_sidebar_slider-range">
                 
@@ -183,12 +228,83 @@
         и проводит до номера</pre>
             </div>
 
+            <div class="content_sidebar_dropdown-container">
+              <div class="selected-items">Выбрать конфигурацию номера...</div>
+              <div class="items hidden">
+                  <div class="item">
+                      <span class="title">Спальни</span>
+                      <span class="btn minus">-</span>
+                      <input type="text" name="rooms" value="0">
+                      <span class="btn plus">+</span>
+                  </div>
+                  <div class="item">
+                      <span class="title">Кровати</span>
+                      <span class="btn minus">-</span>
+                      <input type="text" name="beds"  value="0">
+                      <span class="btn plus">+</span>
+                  </div>
+                  <div class="item">
+                      <span class="title">Ванные комнаты</span>
+                      <span class="btn minus">-</span>
+                      <input type="text" name="bathroom"  value="0">
+                      <span class="btn plus">+</span>
+                  </div>
+              </div>
+          </div>
+      
+          <script>
+              $(document).ready(function () {
+      
+                  //Кнопка минус
+                  $('.btn.minus').click(function () {
+                      let input = $(this).parent().find('input');
+                      let newValue = input.val() - 1;
+      
+                      if(newValue >= 0) {
+                          input.val(newValue).change();
+                      }
+                  });
+      
+                  //Кнопка плюс
+                  $('.btn.plus').click(function () {
+                      let input = $(this).parent().find('input');
+                      let newValue = parseInt(input.val()) + 1;
+      
+                      if(newValue < 10) {
+                          input.val(newValue).change();
+                      }
+                  });
+      
+                  //Отслеживаем изменение
+                  $('.item input').change(function () {
+                      var selectedtext = '';
+                      var selectTextAdd = false;
+                      $('.item input').each(function () {
+                          if($(this).val() > 0) {
+                              text = $(this).parent().find('.title').text();
+                              selectedtext += text + ' ' + $(this).val() + ',';
+                          }
+      
+                          if(selectedtext!=''){
+      
+                              if(!selectTextAdd) {
+                                  selectedtext = selectedtext;
+                                  selectTextAdd = true;
+                              }
+      
+                              $('.selected-items').text(selectedtext);
+                          }
+                      });
+                  });
+      
+                  $('.selected-items').click(function () {
+                      $('.items').toggleClass('hidden');
+                  });
+      
+              });
+          </script>
 
-
-            <div class="content_sidebar_comfort">
-                <label for="content_sidebar_comfort_field" class="content_sidebar_comfort_title">Удобства номера</label>
-                <input type="text" id="content_sidebar_comfort_field">
-            </div>
+            
 
             <div class="content_sidebar_additional">
                 <h1 class="content_sidebar_additional-text">дополнительные удобства
@@ -803,8 +919,9 @@
 
     </div>
     </div></div>
-
-    
+   
+    <script src="/html/dist/js/datepicker.min.js"></script>
+  
 </body>
 
 </html>
