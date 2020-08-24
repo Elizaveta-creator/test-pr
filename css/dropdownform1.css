@@ -137,3 +137,45 @@ color: rgba(31, 32, 65, 0.5);
 .hidden1, .hidden {
     display: none;
 }
+
+
+.dropdown__btn {
+   
+    width:100%;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+
+.dropdown__btn-remove {
+  
+    background-color: white;
+    border: none;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: rgba(31, 32, 65, 0.5);
+}
+
+
+.dropdown__btn-accept {
+   width:32%;
+    background-color: white;
+    border: none;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+
+/* Primary Color */
+color: #BC9CFF;  
+margin-left: 110px;
+}

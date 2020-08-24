@@ -69,10 +69,10 @@ body {
 }
 
 .content_sidebar {
-
-   border: 1px solid black;
+  display:flex;
+   flex-wrap: wrap;
    width: 30%;
-   height: 800px;
+   
 }
 
 
@@ -111,107 +111,6 @@ border-color: blueviolet;
 border: 1px solid rgba(31, 32, 65, 0.25);
 box-sizing: border-box;
 border-radius: 4px;
-}
-
-
-.content_sidebar_gst {
-   display: flex;
-    width: 100%;
-    flex-flow: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    
-    height: 100px;
-
-}
-
-#content_sidebar_gst {
-    margin: 10px;  
-width:100%;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-
-/* Dark 100% */
-color: #1F2041;
-}
-
-#content_sidebar_gst-onclick {
-    margin: 10px;
-    width: 80%;
-    height: 44px;
-    
-background: #FFFFFF;
-/* Dark 25% */
-
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 4px;
-
-
-}
-
-
-.content_sidebar_gst-onclick::placeholder {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-/* identical to box height, or 171% */
-
-
-/* Dark 75% */
-
-color: rgba(31, 32, 65, 0.75);
-}
-
-
-
-.content_sidebar_gst-cont 
-{
-    background: #FFFFFF;
-/* Dark 25% */
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 4px;
-}
-
-.content_sidebar_gst-adults .content_sidebar_gst-children .content_sidebar_gst-kids {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-
-/* Dark 100% */
-color: #1F2041;
-}
-
-#content_sidebar_gst-decrease #content_sidebar_gst-decrease1 #content_sidebar_gst-decrease2 #content_sidebar_gst-increase #content_sidebar_gst-increase1 #content_sidebar_gst-increase2 {
-    border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 22px;
-}
-
-#content_sidebar_gst-button #content_sidebar_gst-button1 #content_sidebar_gst-button2 {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-align: center;
-text-transform: uppercase;
-border: none;
-/* Dark 100% */
-color: #1F2041;
 }
 
 
@@ -572,7 +471,7 @@ border-radius: 2px;
 
 
 .content_main {
-    
+
     width: 80%;
 }
 .content_list {
