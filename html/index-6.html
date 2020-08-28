@@ -86,14 +86,20 @@
             <div class="content_sidebar-datepicker-here">
                 <label for id="datepicker-here" class="content_sidebar_calendar-title">даты пребывания в отеле</label>
              
-                <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-here"/>
-                
+                <input type='text' data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-here" placeholder="дд.мм.гггг">
+                <div class="datepicker__btn">
+                  <input type="button" class="datepicker__btn-remove" onclick="datepicker__btn-remove"
+                  value="Очистить">
+                  <input type="button" class="datepicker__btn-accept" onclick="datepicker__btn-accept"
+                  value="Применить">
+        </div>
             </div>
 
 
 
             <div class="content_sidebar_dropdown-gst">
-              <div class="selected-items1">Сколько гостей</div>
+              <div class="selected-items1">Сколько гостей <img src="/img/expand_more.svg" class="arrow">
+              </div>
               <div class="items1 hidden1">
                   <div class="item1">
                       <span class="title1">Взрослые</span>
@@ -235,7 +241,7 @@
             </div>
 
             <div class="content_sidebar_dropdown-container">
-              <div class="selected-items">Выбрать конфигурацию номера...</div>
+              <div class="selected-items">Удобства номера <img src="/img/expand_more.svg" class="arrow1"></div>
               <div class="items hidden">
                   <div class="item">
                       <span class="title">Спальни</span>
@@ -320,47 +326,51 @@
 
             
 
-            <div class="content_sidebar_additional">
-                <h1 class="content_sidebar_additional-text">дополнительные удобства
-                <span class="content_sidebar-expand">∨</span></h1>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="breakfast" value="breakfast" id="content_sidebar_expand-breakfast">
-                        <label for="content_sidebar_expand-breakfast" class="content_sidebar_expand-title">Завтрак</label>
-                    </li>
-            
-                    <li>
-                        <input type="checkbox" name="table" value="table" id="content_sidebar_expand-table">
-                        <label for="content_sidebar_expand-table" class="content_sidebar_expand-title">Письменный стол</label>
-                       </li>
-            
-                    <li>
-                    <input type="checkbox" name="chair" value="chair" id="content_sidebar_expand-chair">
-                    <label for="content_sidebar_expand-chair" class="content_sidebar_expand-title">Стул для кормления</label></li>
-                   
-                   
-                   
-                    <li>
-                        
-                        <input type="checkbox" name="bed" value="bed" id="content_sidebar_expand-bed">
-                        <label for="content_sidebar_expand-bed" class="content_sidebar_expand-title">Кроватка</label>
-                    </li>
-                        
-            
-            
-                    <li>
-                        <input type="checkbox" name="tv" value="tv" id="content_sidebar_expand-tv">
-                        <label for="content_sidebar_expand-tv" class="content_sidebar_expand-title">Телевизор</label></li>
-                       
-                    <li>
-                        <input type="checkbox" name="shampoo" value="shampoo" id="content_sidebar_expand-shampoo">
-                        <label for="content_sidebar_expand-shampoo" class="content_sidebar_expand-title">Шампунь</label>
-                    </li>
-                        
-                        
-                </ul>
-            </div>
+<div class="container_expand">
+  <div class="click-block">дополнительные удобства
+  <span class="arrow-btn"></span></div>
+  <div class="hiding-block">
+    <ul>
+                  <li>
+                      <input type="checkbox" name="breakfast" value="breakfast" id="content_sidebar_expand-breakfast">
+                      <label for="content_sidebar_expand-breakfast" class="content_sidebar_expand-title">Завтрак</label>
+                  </li>
+          
+                  <li>
+                      <input type="checkbox" name="table" value="table" id="content_sidebar_expand-table">
+                      <label for="content_sidebar_expand-table" class="content_sidebar_expand-title">Письменный стол</label>
+                     </li>
+          
+                  <li>
+                  <input type="checkbox" name="chair" value="chair" id="content_sidebar_expand-chair">
+                  <label for="content_sidebar_expand-chair" class="content_sidebar_expand-title">Стул для кормления</label></li>
+                 
+                 
+                 
+                  <li>
+                      
+                      <input type="checkbox" name="bed" value="bed" id="content_sidebar_expand-bed">
+                      <label for="content_sidebar_expand-bed" class="content_sidebar_expand-title">Кроватка</label>
+                  </li>
+                      
+          
+          
+                  <li>
+                      <input type="checkbox" name="tv" value="tv" id="content_sidebar_expand-tv">
+                      <label for="content_sidebar_expand-tv" class="content_sidebar_expand-title">Телевизор</label></li>
+                     
+                  <li>
+                      <input type="checkbox" name="shampoo" value="shampoo" id="content_sidebar_expand-shampoo">
+                      <label for="content_sidebar_expand-shampoo" class="content_sidebar_expand-title">Шампунь</label>
+                  </li>
+                      
+                      
+              </ul>
+  </div>
+</div>
         </div>
+
+
 
         <div class="content_main">
             <h1 class="content_main_title">Номера, которые мы для вас подобрали</h1>
